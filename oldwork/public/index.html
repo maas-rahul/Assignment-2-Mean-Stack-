@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html ng-app="report">
+    <head>
+        <title>Report App</title> 
+        
+        
+    </head>
+    <body ng-controller="reportcontroller">
+        <h1>Report App  is here..</h1>
+
+        <table>
+            <tr ng-repeat=" contact in contactlist">
+                <td>{{contact.name}}</td>
+                <td>{{contact.email}}</td>
+            </tr>
+        </table>
+
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+        <script src="controllers/controller.js"></script>
+    </body>
+</html>
